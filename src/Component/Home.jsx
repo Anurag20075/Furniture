@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 
 export default function HomePage() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const [ setActiveCategory] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
@@ -99,56 +99,11 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-white/90 rounded-md flex items-center justify-center">
-              <img className="text-white/90 font-bold" src="/dist/Logo.svg" alt="Logo" />
-            </div>
-            <span className="text-xl font-semibold text-gray-800">Pradeep Furniture</span>
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#categories" className="text-gray-600 hover:text-blue-700 transition-colors">Categories</a>
-            <a href="#ai-design" className="text-gray-600 hover:text-blue-700 transition-colors">AI Design</a>
-            <a href="#how-it-works" className="text-gray-600 hover:text-blue-700 transition-colors">How It Works</a>
-            <a href="#testimonials" className="text-gray-600 hover:text-blue-700 transition-colors">Testimonials</a>
-            <a href="#consultation" className="text-gray-600 hover:text-blue-700 transition-colors">Consultation</a>
-          </div>
-          
-          <button 
-            className="md:hidden text-gray-600"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-        
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t"
-          >
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-              <a href="#categories" className="text-gray-600 hover:text-blue-700 transition-colors">Categories</a>
-              <a href="#ai-design" className="text-gray-600 hover:text-blue-700 transition-colors">AI Design</a>
-              <a href="#how-it-works" className="text-gray-600 hover:text-blue-700 transition-colors">How It Works</a>
-              <a href="#testimonials" className="text-gray-600 hover:text-blue-700 transition-colors">Testimonials</a>
-              <a href="#consultation" className="text-gray-600 hover:text-blue-700 transition-colors">Consultation</a>
-            </div>
-          </motion.div>
-        )}
-      </nav>
-
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/dist/Background.png" 
+            src="/Untitled design (2) .png" 
             alt="Modern furniture setup" 
             className="w-full h-full object-cover"
           />
