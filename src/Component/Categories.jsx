@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom"; // ✅ Added
+import { Link } from "react-router-dom";
 import mockProducts from "../data/Mockdata";
 import categories from "../data/CategoriesData";
 
@@ -14,8 +14,11 @@ const Categories = () => {
   useEffect(() => {
     let result = [...products];
 
+    // Filter by category only if it exists in product
     if (selectedCategory !== "All") {
-      result = result.filter((p) => p.category === selectedCategory);
+      result = result.filter(
+        (p) => p.category && p.category === selectedCategory
+      );
     }
 
     if (searchQuery.trim() !== "") {
@@ -23,12 +26,14 @@ const Categories = () => {
         p.name.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
+
     setFilteredProducts(result);
   }, [products, selectedCategory, searchQuery]);
 
   return (
     <div className="min-h-screen bg-linear-to-br from-pink-50 to-blue-50 p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
+        {/* Header */}
         <header className="mb-6">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
             Customizable Gifts
@@ -37,6 +42,7 @@ const Categories = () => {
             Find the perfect personalized gift for your loved ones
           </p>
 
+          {/* Category Buttons */}
           <div className="mb-8">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold text-gray-800">
@@ -64,6 +70,7 @@ const Categories = () => {
           </div>
         </header>
 
+        {/* Product Grid */}
         <main>
           {filteredProducts.length > 0 ? (
             <AnimatePresence>
@@ -75,28 +82,38 @@ const Categories = () => {
                   <Link to={`/product/${product.id}`} key={product.id}>
                     <motion.div
                       layout
-                      initial={{ opacity: 0, scale: 0.8 }}
+                      initial={{ opacity: 0, scale: 0.9 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.8 }}
+                      exit={{ opacity: 0, scale: 0.9 }}
                       transition={{ duration: 0.3 }}
                       className="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md cursor-pointer"
                     >
+                      {/* ✅ Handle nested image correctly */}
                       <img
-                        src={product.image}
+                        src={product.image?.src || "/fallback.jpeg"}
                         alt={product.name}
                         className="w-full h-48 object-cover"
                       />
+
                       <div className="p-5">
                         <h3 className="font-bold text-lg text-gray-800">
                           {product.name}
                         </h3>
+
+                        {/* Safe access for optional fields */}
                         <p className="text-sm text-gray-500 mb-2">
-                          {product.category}
+                          {product.category || "Uncategorized"}
                         </p>
+
+                        <p className="text-sm text-gray-600 mb-3">
+                          {product.description}
+                        </p>
+
                         <div className="flex justify-between items-center">
                           <span className="text-blue-600 font-bold">
-                            ${product.price.toFixed(2)}
+                            {product.price ? `$${product.price.toFixed(2)}` : "Price on Request"}
                           </span>
+
                           <span className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                           </span>
@@ -126,6 +143,7 @@ const Categories = () => {
         </main>
       </div>
 
+      {/* Hide scrollbar styling */}
       <style jsx="true">{`
         .hide-scrollbar::-webkit-scrollbar {
           display: none;

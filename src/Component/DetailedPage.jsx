@@ -175,7 +175,7 @@ export default function DetailPage({ product, related }) {
                 <motion.div
                   key={r.id}
                   whileHover={{ y: -6 }}
-                  className="w-44 bg-gray-50 rounded-lg p-3 flex-shrink-0"
+                  className="w-44 bg-gray-50 rounded-lg p-3 shrink-0"
                 >
                   <img
                     src={r.image}
