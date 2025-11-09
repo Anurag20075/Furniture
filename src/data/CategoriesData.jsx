@@ -1,6 +1,6 @@
 const categories = [
   { id: "All", name: "All Products", icon: "🛍️" },
-  { id: "T-Shirts", name: "T-Shirts", icon: "👕" },
+  { id: "Kitchen", name: "Kitchen ", icon: "👕" },
   { id: "Hoodies", name: "Hoodies", icon: "🧥" },
   { id: "Business Cards", name: "Business Cards", icon: "💼" },
   { id: "Posters", name: "Posters", icon: "🎨" },
