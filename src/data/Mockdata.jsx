@@ -13,7 +13,7 @@ const mockProducts = [
   {
     id: 2,
     name: "L-Shaped Modular Kitchen",
-    price: 899.99,
+    // price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: true,
@@ -27,7 +27,7 @@ const mockProducts = [
   {
     id: 3,
     name: "U-Shaped Modular Kitchen",
-    price: 1199.99,
+    // price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: true,
@@ -41,7 +41,7 @@ const mockProducts = [
   {
     id: 4,
     name: "Parallel Modular Kitchen",
-    price: 999.99,
+    // price: 999.99,
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: false,
@@ -55,7 +55,7 @@ const mockProducts = [
   {
     id: 5,
     name: "Island Modular Kitchen",
-    price: 1399.99,
+  //  price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: true,
@@ -69,7 +69,7 @@ const mockProducts = [
   {
     id: 6,
     name: "Straight Modular Kitchen",
-    price: 799.99,
+    // price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: false,
@@ -83,7 +83,7 @@ const mockProducts = [
   {
     id: 7,
     name: "Compact Modular Kitchen",
-    price: 749.99,
+    // price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: false,
@@ -97,7 +97,7 @@ const mockProducts = [
   {
     id: 8,
     name: "Classic Wooden Modular Kitchen",
-    price: 1099.99,
+    // price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: true,
@@ -111,7 +111,7 @@ const mockProducts = [
   {
     id: 9,
     name: "Modern Glossy Modular Kitchen",
-    price: 1299.99,
+    // price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: true,
@@ -125,7 +125,7 @@ const mockProducts = [
   {
     id: 10,
     name: "Industrial Style Modular Kitchen",
-    price: 1399.99,
+    // price: "On Request",
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: false,
@@ -139,7 +139,7 @@ const mockProducts = [
   {
     id: 11,
     name: "Scandinavian Modular Kitchen",
-    price: 1249.99,
+    // price: 1249.99,
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: true,
@@ -153,7 +153,7 @@ const mockProducts = [
   {
     id: 12,
     name: "Luxury Modular Kitchen Set",
-    price: 1799.99,
+    // price: 1799.99,
     category: "Modular Kitchen",
     customizable: true,
     bestSeller: true,

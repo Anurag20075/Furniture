@@ -39,7 +39,7 @@ function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-700">
-          <Link to="/home" className="hover:text-slate-900">
+          <Link to="/" className="hover:text-slate-900">
             Home
           </Link>
           <Link to="/categories" className="hover:text-slate-900">

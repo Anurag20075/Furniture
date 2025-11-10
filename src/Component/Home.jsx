@@ -494,57 +494,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-blue-700 rounded-md flex items-center justify-center">
-                  <span className="text-white font-bold">W</span>
-                </div>
-                <span className="text-xl font-semibold">Pradeep Furniture</span>
-              </div>
-              <p className="text-gray-400">
-                Design furniture that fits your imagination with our AI-powered customization tools.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">How It Works</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Design Gallery</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Support</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Shipping & Returns</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Care Instructions</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Connect</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Facebook</a></li>
-                <li><a href="https://www.instagram.com/pradeepfurniture.in?igsh=MWxteTc2aGxieGhiaw==" className="hover:text-white transition-colors">Instagram</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pinterest</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">YouTube</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Woodify. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   );
 }
