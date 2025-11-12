@@ -506,8 +506,343 @@ const mockProducts = [
   image: {
     "src": "/Almirah/12.jpeg"
   }
+},
+{
+  id: 37,
+  name: "Premium Wooden Main Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Elegant solid wood main door | Carved detailing | Polished for durability and style",
+  material: "Solid Teak Wood with Lacquer Finish",
+  colors: ["walnut", "mahogany", "natural oak"],
+  image: {
+    "src": "/Door/1.jpeg"
+  }
+},
+{
+  id: 38,
+  name: "Modern Flush Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Minimalist flush design | Smooth matte texture | Perfect for contemporary interiors",
+  material: "Engineered Wood with Laminate Finish",
+  colors: ["white", "ash grey", "dark brown"],
+  image: {
+    "src": "/Door/2.jpeg"
+  }
+},
+{
+  id: 39,
+  name: "Designer Panel Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Classic panel design | Enhanced with veneer finish | Sturdy and elegant construction",
+  material: "Hardwood Frame with Veneer Overlay",
+  colors: ["oak", "cherry", "walnut"],
+  image: {
+    "src": "/Door/3.jpeg"
+  }
+},
+{
+  id: 40,
+  name: "Glass Panel Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Stylish glass panel inserts | Perfect for modern interiors | Light-enhancing design",
+  material: "Wood & Tempered Glass Combination",
+  colors: ["white", "smoke grey", "black"],
+  image: {
+    "src": "/Door/4.jpeg"
+  }
+},
+{
+  id: 41,
+  name: "Luxury Carved Entrance Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Intricately carved solid door | Premium polish | Designed for grand entrances",
+  material: "Solid Wood with Handcrafted Carving",
+  colors: ["teak", "mahogany", "rosewood"],
+  image: {
+    "src": "/Door/5.jpeg"
+  }
+},
+{
+  id: 42,
+  name: "Contemporary Interior Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Smooth sleek design | Ideal for bedrooms and offices | Durable and easy to maintain",
+  material: "High-Density Fiberboard with Laminate",
+  colors: ["cream", "charcoal", "white"],
+  image: {
+    "src": "/Door/6.jpeg"
+  }
+},
+{
+  id: 43,
+  name: "Classic Double Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Traditional double door style | Rich finish | Adds a royal aesthetic to any home",
+  material: "Solid Wood with Gloss Polish",
+  colors: ["walnut", "cherry brown", "golden teak"],
+  image: {
+    "src": "/Door/7.jpeg"
+  }
+},
+{
+  id: 44,
+  name: "Matte Finish Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Simple matte surface | Scratch-resistant coating | Suitable for all interiors",
+  material: "Engineered Wood with PU Matte Coating",
+  colors: ["ash grey", "white", "beige"],
+  image: {
+    "src": "/Door/8.jpeg"
+  }
+},
+{
+  id: 45,
+  name: "Glass and Wood Fusion Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Combination of frosted glass and wood | Adds light and style | Modern minimal look",
+  material: "Tempered Glass & Hardwood Frame",
+  colors: ["white", "smoke", "charcoal"],
+  image: {
+    "src": "/Door/9.jpeg"
+  }
+},
+{
+  id: 46,
+  name: "Veneer Finish Interior Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Rich veneer texture | Elegant tones | Great for bedrooms and study rooms",
+  material: "Engineered Wood with Veneer Sheet",
+  colors: ["walnut", "oak", "brown"],
+  image: {
+    "src": "/Door/10.jpeg"
+  }
+},
+{
+  id: 47,
+  name: "Modern Sliding Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Smooth sliding mechanism | Space-saving design | Ideal for wardrobes and partitions",
+  material: "Aluminium Frame with Laminate Panel",
+  colors: ["white", "grey", "black"],
+  image: {
+    "src": "/Door/11.jpeg"
+  }
+},
+{
+  id: 48,
+  name: "Luxury Wooden Main Door",
+  // price: 1799.99,
+  category: "Door",
+  customizable: true,
+  bestSeller: true,
+  description: "Heavy-duty main entrance door | Decorative moldings | Built for strength and elegance",
+  material: "Solid Hardwood with PU Coating",
+  colors: ["dark brown", "natural teak", "mahogany"],
+  image: {
+    "src": "/Door/12.jpeg"
+  }
+},
+{
+  id: 49,
+  name: "Modern POP Ceiling Design",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Elegant POP false ceiling | Hidden lighting setup | Ideal for living and drawing rooms",
+  material: "Gypsum Board & POP Finish",
+  colors: ["white", "ivory", "light grey"],
+  image: {
+    "src": "/Celling/1.jpeg"
+  }
+},
+{
+  id: 50,
+  name: "Wooden Panel Ceiling",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Premium wooden ceiling panels | Natural finish | Adds warmth to interiors",
+  material: "Teak Veneer & MDF Panels",
+  colors: ["teak", "walnut", "mahogany"],
+  image: {
+    "src": "/Celling/2.jpeg"
+  }
+},
+{
+  id: 51,
+  name: "Luxury False Ceiling with LED",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Integrated LED strip lighting | Smooth gypsum finish | Perfect for modern interiors",
+  material: "Gypsum Board & Aluminum Frame",
+  colors: ["white", "warm white", "cream"],
+  image: {
+    "src": "/Celling/3.jpeg"
+  }
+},
+{
+  id: 52,
+  name: "Cove Lighting Ceiling Design",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Soft cove lighting edges | Sleek modern design | Enhances room ambiance",
+  material: "POP with Recessed Lighting",
+  colors: ["white", "light gold", "beige"],
+  image: {
+    "src": "/Celling/4.jpeg"
+  }
+},
+{
+  id: 53,
+  name: "Geometric Ceiling Pattern",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Geometric false ceiling layout | Eye-catching symmetry | Great for halls and offices",
+  material: "POP & MDF Combination",
+  colors: ["white", "cream", "grey"],
+  image: {
+    "src": "/Celling/5.jpeg"
+  }
+},
+{
+  id: 54,
+  name: "Luxury Coffered Ceiling",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Classic coffered ceiling | Wooden grid look | Elegant and timeless interior touch",
+  material: "MDF Panels & Wooden Beams",
+  colors: ["white", "dark walnut", "ivory"],
+  image: {
+    "src": "/Celling/6.jpeg"
+  }
+},
+{
+  id: 55,
+  name: "Metallic Finish False Ceiling",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Sleek metallic surface | Reflective texture | Perfect for commercial and office interiors",
+  material: "Metal Panels with Powder Coating",
+  colors: ["silver", "grey", "bronze"],
+  image: {
+    "src": "/Celling/7.jpeg"
+  }
+},
+{
+  id: 56,
+  name: "PVC Ceiling Panels",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Lightweight PVC panels | Moisture resistant | Suitable for kitchens and bathrooms",
+  material: "PVC & Aluminum Trims",
+  colors: ["white", "ivory", "light brown"],
+  image: {
+    "src": "/Celling/8.jpeg"
+  }
+},
+{
+  id: 57,
+  name: "Minimal POP Ceiling",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Clean and minimal false ceiling | Smooth matte finish | Perfect for modern spaces",
+  material: "POP Board with Matte Paint",
+  colors: ["white", "cream", "off white"],
+  image: {
+    "src": "/Celling/9.jpeg"
+  }
+},
+{
+  id: 58,
+  name: "Layered Ceiling Design",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Multi-layered design with light integration | Adds depth and drama to the ceiling",
+  material: "Gypsum Board with LED Lighting",
+  colors: ["white", "golden beige", "charcoal"],
+  image: {
+    "src": "/Celling/10.jpeg"
+  }
+},
+{
+  id: 59,
+  name: "Wooden Beam Ceiling",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Exposed wooden beam design | Rustic appeal | Ideal for villas and living rooms",
+  material: "Solid Wood Beams & MDF Base",
+  colors: ["brown", "dark walnut", "natural oak"],
+  image: {
+    "src": "/Celling/11.jpeg"
+  }
+},
+{
+  id: 60,
+  name: "Luxury Gypsum Ceiling with Chandelier Mount",
+  // price: 1799.99,
+  category: "Ceiling",
+  customizable: true,
+  bestSeller: true,
+  description: "Premium false ceiling design with chandelier space | Perfect centerpiece for hall or dining area",
+  material: "Gypsum Board with Metal Support Frame",
+  colors: ["white", "cream", "light gold"],
+  image: {
+    "src": "/Celling/12.jpeg"
+  }
 }
 
 ];
-
 export default mockProducts;
