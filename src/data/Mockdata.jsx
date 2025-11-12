@@ -495,7 +495,7 @@ const mockProducts = [
 },
 {
   id: 36,
-  name: "Luxury Floor-to-Ceiling Almirah",
+  name: "Luxury Floor-to-Fall Ceiling Almirah",
   // price: 1799.99,
   category: "Almirah",
   customizable: true,
@@ -677,12 +677,12 @@ const mockProducts = [
 },
 {
   id: 49,
-  name: "Modern POP Ceiling Design",
+  name: "Modern POP Fall Ceiling Design",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
-  description: "Elegant POP false ceiling | Hidden lighting setup | Ideal for living and drawing rooms",
+  description: "Elegant POP false Fall Ceiling | Hidden lighting setup | Ideal for living and drawing rooms",
   material: "Gypsum Board & POP Finish",
   colors: ["white", "ivory", "light grey"],
   image: {
@@ -691,12 +691,12 @@ const mockProducts = [
 },
 {
   id: 50,
-  name: "Wooden Panel Ceiling",
+  name: "Wooden Panel Fall Ceiling",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
-  description: "Premium wooden ceiling panels | Natural finish | Adds warmth to interiors",
+  description: "Premium wooden Fall Ceiling panels | Natural finish | Adds warmth to interiors",
   material: "Teak Veneer & MDF Panels",
   colors: ["teak", "walnut", "mahogany"],
   image: {
@@ -705,9 +705,9 @@ const mockProducts = [
 },
 {
   id: 51,
-  name: "Luxury False Ceiling with LED",
+  name: "Luxury False Fall Ceiling with LED",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
   description: "Integrated LED strip lighting | Smooth gypsum finish | Perfect for modern interiors",
@@ -719,9 +719,9 @@ const mockProducts = [
 },
 {
   id: 52,
-  name: "Cove Lighting Ceiling Design",
+  name: "Cove Lighting Fall Ceiling Design",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Fall Ceiling",
   customizable: true,
   bestSeller: true,
   description: "Soft cove lighting edges | Sleek modern design | Enhances room ambiance",
@@ -733,12 +733,12 @@ const mockProducts = [
 },
 {
   id: 53,
-  name: "Geometric Ceiling Pattern",
+  name: "Geometric Fall Fall Ceiling Pattern",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Fall Ceiling",
   customizable: true,
   bestSeller: true,
-  description: "Geometric false ceiling layout | Eye-catching symmetry | Great for halls and offices",
+  description: "Geometric false Fall Fall Ceiling layout | Eye-catching symmetry | Great for halls and offices",
   material: "POP & MDF Combination",
   colors: ["white", "cream", "grey"],
   image: {
@@ -747,12 +747,12 @@ const mockProducts = [
 },
 {
   id: 54,
-  name: "Luxury Coffered Ceiling",
+  name: "Luxury Coffered Fall Fall Ceiling",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
-  description: "Classic coffered ceiling | Wooden grid look | Elegant and timeless interior touch",
+  description: "Classic coffered Fall Ceiling | Wooden grid look | Elegant and timeless interior touch",
   material: "MDF Panels & Wooden Beams",
   colors: ["white", "dark walnut", "ivory"],
   image: {
@@ -761,9 +761,9 @@ const mockProducts = [
 },
 {
   id: 55,
-  name: "Metallic Finish False Ceiling",
+  name: "Metallic Finish False Fall Ceiling",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
   description: "Sleek metallic surface | Reflective texture | Perfect for commercial and office interiors",
@@ -775,9 +775,9 @@ const mockProducts = [
 },
 {
   id: 56,
-  name: "PVC Ceiling Panels",
+  name: "PVC Fall Ceiling Panels",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
   description: "Lightweight PVC panels | Moisture resistant | Suitable for kitchens and bathrooms",
@@ -789,12 +789,12 @@ const mockProducts = [
 },
 {
   id: 57,
-  name: "Minimal POP Ceiling",
+  name: "Minimal POP Fall Ceiling",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
-  description: "Clean and minimal false ceiling | Smooth matte finish | Perfect for modern spaces",
+  description: "Clean and minimal false Fall Ceiling | Smooth matte finish | Perfect for modern spaces",
   material: "POP Board with Matte Paint",
   colors: ["white", "cream", "off white"],
   image: {
@@ -803,12 +803,12 @@ const mockProducts = [
 },
 {
   id: 58,
-  name: "Layered Ceiling Design",
+  name: "Layered Fall Ceiling Design",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
-  description: "Multi-layered design with light integration | Adds depth and drama to the ceiling",
+  description: "Multi-layered design with light integration | Adds depth and drama to the Fall Ceiling",
   material: "Gypsum Board with LED Lighting",
   colors: ["white", "golden beige", "charcoal"],
   image: {
@@ -817,9 +817,9 @@ const mockProducts = [
 },
 {
   id: 59,
-  name: "Wooden Beam Ceiling",
+  name: "Wooden Beam Fall Ceiling",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Fall Ceiling",
   customizable: true,
   bestSeller: true,
   description: "Exposed wooden beam design | Rustic appeal | Ideal for villas and living rooms",
@@ -829,18 +829,186 @@ const mockProducts = [
     "src": "/Celling/11.jpeg"
   }
 },
+// {
+//   id: 60,
+//   name: "Luxury Gypsum Fall Ceiling with Chandelier Mount",
+//   // price: 1799.99,
+//   category: "Fall Ceiling",
+//   customizable: true,
+//   bestSeller: true,
+//   description: "Premium false Fall Ceiling design with chandelier space | Perfect centerpiece for hall or dining area",
+//   material: "Gypsum Board with Metal Support Frame",
+//   colors: ["white", "cream", "light gold"],
+//   image: {
+//     "src": "/Celling/12.jpeg"
+//   }
+// },
 {
-  id: 60,
-  name: "Luxury Gypsum Ceiling with Chandelier Mount",
+  id: 61,
+  name: "Modern Bedroom Set",
   // price: 1799.99,
-  category: "Ceiling",
+  category: "Bedroom",
   customizable: true,
   bestSeller: true,
-  description: "Premium false ceiling design with chandelier space | Perfect centerpiece for hall or dining area",
-  material: "Gypsum Board with Metal Support Frame",
-  colors: ["white", "cream", "light gold"],
+  description: "Complete modern bedroom setup | Includes bed, side tables & wardrobe | Sleek minimalist design",
+  material: "Engineered Wood with Matte Laminate Finish",
+  colors: ["walnut", "white", "charcoal"],
   image: {
-    "src": "/Celling/12.jpeg"
+    "src": "/Bedroom/1.jpeg"
+  }
+},
+{
+  id: 62,
+  name: "Luxury King Size Bed",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Spacious king-size bed | Padded headboard | Elegant and comfortable sleeping experience",
+  material: "Solid Wood Frame with Fabric Upholstery",
+  colors: ["cream", "grey", "beige"],
+  image: {
+    "src": "/Bedroom/2.jpeg"
+  }
+},
+{
+  id: 63,
+  name: "Contemporary Bedroom Interior",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Minimalist layout | Wall-mounted storage | Clean lines and modern aesthetics",
+  material: "High Gloss MDF & Veneer Finish",
+  colors: ["white", "light oak", "charcoal grey"],
+  image: {
+    "src": "/Bedroom/3.jpeg"
+  }
+},
+{
+  id: 64,
+  name: "Premium Queen Bed with Side Tables",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Elegant queen bed with matching side tables | Soft-close drawers | Luxury feel for any room",
+  material: "Engineered Wood & Leatherette Headboard",
+  colors: ["brown", "ivory", "tan"],
+  image: {
+    "src": "/Bedroom/4.jpeg"
+  }
+},
+{
+  id: 65,
+  name: "Wooden Bedroom Set",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Classic solid wood furniture | Warm natural tones | Long-lasting craftsmanship",
+  material: "Sheesham Wood with Satin Finish",
+  colors: ["teak", "walnut", "honey brown"],
+  image: {
+    "src": "/Bedroom/5.jpeg"
+  }
+},
+{
+  id: 66,
+  name: "Luxury Upholstered Bed",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Soft fabric upholstered frame | Premium stitching | Adds elegance and comfort to your space",
+  material: "Pine Wood & Padded Fabric Upholstery",
+  colors: ["beige", "grey", "blue"],
+  image: {
+    "src": "/Bedroom/6.jpeg"
+  }
+},
+{
+  id: 67,
+  name: "Designer Bedroom Wardrobe",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Spacious wardrobe with mirror panels | Adjustable shelving | Modern dual-tone design",
+  material: "MDF with Gloss & Matte Finish Combo",
+  colors: ["white", "charcoal", "cream"],
+  image: {
+    "src": "/Bedroom/7.jpeg"
+  }
+},
+{
+  id: 68,
+  name: "Minimalist Bedroom Decor",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Clean, space-efficient setup | Focus on simplicity and comfort | Ideal for small apartments",
+  material: "Engineered Wood with Matte Laminate",
+  colors: ["white", "light grey", "ash brown"],
+  image: {
+    "src": "/Bedroom/8.jpeg"
+  }
+},
+{
+  id: 69,
+  name: "Smart Modular Bedroom",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Integrated storage under bed | Modular wardrobe system | Perfect for compact homes",
+  material: "MDF with Hydraulic Lift Bed Frame",
+  colors: ["cream", "brown", "grey"],
+  image: {
+    "src": "/Bedroom/9.jpeg"
+  }
+},
+{
+  id: 70,
+  name: "Elegant Wooden Bed Frame",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Sturdy frame with headboard | Natural wood finish | Crafted for comfort and durability",
+  material: "Solid Oak Wood",
+  colors: ["natural oak", "walnut", "dark brown"],
+  image: {
+    "src": "/Bedroom/10.jpeg"
+  }
+},
+{
+  id: 71,
+  name: "Luxury Bedroom Interior with Lighting",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Warm lighting design | Custom wall paneling | Plush furnishings | Elegant ambiance",
+  material: "High Gloss MDF & LED Integration",
+  colors: ["cream", "white gold", "mocha"],
+  image: {
+    "src": "/Bedroom/11.jpeg"
+  }
+},
+{
+  id: 72,
+  name: "Classic Bedroom Furniture Set",
+  // price: 1799.99,
+  category: "Bedroom",
+  customizable: true,
+  bestSeller: true,
+  description: "Includes bed, wardrobe, and dresser | Traditional style | Rich finish and durable build",
+  material: "Solid Wood with Veneer Polish",
+  colors: ["mahogany", "teak", "walnut"],
+  image: {
+    "src": "/Bedroom/12.jpeg"
   }
 }
 

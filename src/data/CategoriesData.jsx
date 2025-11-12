@@ -1,12 +1,12 @@
 const categories = [
-  { id: "All", name: "All Products", icon: "🛍️" },
-  { id: "Kitchen", name: "Kitchen ", icon: "👕" },
-  { id: "Wardrobe", name: "Wardrobe", icon: "🧥" },
-  { id: "Windows", name: "Windows", icon: "💼" },
+  { id: "All Product ", name: "All Products", icon: "🛍️" },
+  { id: "Modular Kitchen", name: "Modular Kitchen ", icon: "👕" },
+  { id: "Almirah", name: "Almirah", icon: "🧥" },
+  // { id: "Windows", name: "Windows", icon: "💼" },
   { id: "Door", name: "Door", icon: "🎨" },
-  { id: "Tv Cabinet", name: "Tv Cabinet", icon: "☕" },
+  { id: "TV Cabinet", name: "TV Cabinet", icon: "☕" },
   { id: "Fall Ceiling", name: "Fall Ceiling", icon: "✏️" },
-  { id: "BedRoom", name: "Bed", icon: "🏴" },
+  { id: "Bedroom", name: "Bedroom", icon: "🏴" },
   { id: "Sofa", name: "Sofa", icon: "👜" },
 ];
 
