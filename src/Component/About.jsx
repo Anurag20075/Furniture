@@ -1,373 +1,459 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import { motion } from "framer-motion";
-import {
-  Leaf,
-  Sparkles,
-  Hammer,
-  Ruler,
-  Recycle,
-  ArrowRight,
-  ChevronRight,
-  ShieldCheck,
-  HeartHandshake,
-  Package2,
-} from "lucide-react";
-
-// ------------------------------------------------------------
-// Woodify — About Page (single-file React component)
-// Tech: React + Tailwind CSS + Framer Motion + Lucide Icons
-// ------------------------------------------------------------
-// Notes:
-// - Drop this file into your Next.js/React app and route it at /about.
-// - Uses Tailwind utility classes and subtle motion for polish.
-// - Replace placeholder images with brand assets if desired.
-// ------------------------------------------------------------
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
-const stagger = {
-  hidden: {},
-  show: {
-    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
-  },
-};
-
-export default function AboutPage() {
+import { useNavigate } from "react-router-dom";
+export default function About() {
+  const navigate = useNavigate();
+  const handleService = () => {
+    navigate("/service");
+  };
   return (
-    <div className="min-h-screen bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
-      {/* Page container */}
-      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Hero */}
-        <section className="relative overflow-hidden py-20 sm:py-28">
-          <div className="pointer-events-none absolute inset-0">
-            {/* soft gradient blob */}
-            <div className="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-amber-300/20 blur-3xl" />
-            <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-emerald-300/20 blur-3xl" />
+    <div id="webcrumbs">
+      <div className="min-h-screen bg-white font-sans">
+        {/* Header Section */}
+        <header className="relative py-20 bg-beige-50 overflow-hidden">
+          <div className="absolute inset-0 opacity-10 z-0">
+            <img
+              src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Background"
+              className="w-full h-full object-cover"
+              keywords="travel, adventure, happiness, journey, landscape"
+            />
           </div>
-
-          <motion.div
-            variants={stagger}
-            initial="hidden"
-            animate="show"
-            className="relative grid items-center gap-10 md:grid-cols-2"
-          >
-            <motion.div variants={fadeUp}>
-              <span className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1 text-xs font-medium text-zinc-700 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-300">
-                <Sparkles className="h-3.5 w-3.5" />
-                Crafted by You. Built by Woodify.
-              </span>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-                Design furniture that actually fits your life
-              </h1>
-              <p className="mt-4 max-w-xl text-lg text-zinc-600 dark:text-zinc-300">
-                Woodify blends timeless wood aesthetics with modern tech so you can
-                personalize every detail—dimensions, materials, finishes—and see it in your
-                room before it’s built.
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-5xl font-bold mb-6 text-gray-800">
+                About Us
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Who we are, what we believe, and how we create unforgettable
+                experiences.
               </p>
+            </div>
+          </div>
+        </header>
 
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <a
-                  href="/customize"
-                  className="group inline-flex items-center gap-2 rounded-2xl bg-zinc-900 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-zinc-900/10 transition hover:-translate-y-px hover:shadow-zinc-900/20 dark:bg-white dark:text-zinc-900"
-                >
-                  Start Designing
-                  <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
-                </a>
-                <a
-                  href="/collection"
-                  className="inline-flex items-center gap-2 rounded-2xl border border-zinc-300 bg-white px-5 py-3 text-sm font-medium text-zinc-800 transition hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
-                >
-                  Explore Collection
-                  <ChevronRight className="h-4 w-4" />
-                </a>
+        {/* Company Introduction */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              <div className="lg:w-1/2">
+                <h3 className="text-3xl font-semibold mb-6 text-gray-800">
+                  Our Passion for Creating Memories
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Founded in 2018, Happiness Plans was born from a simple idea:
+                  travel and events should be joyful from planning to memories.
+                  We believe that every journey and celebration deserves
+                  meticulous attention and personalized care.
+                </p>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Our team of passionate experts combines global travel
+                  knowledge with event management precision to craft experiences
+                  that exceed expectations. Whether it's a destination wedding
+                  in Bali, a corporate retreat in the Swiss Alps, or a family
+                  reunion in Tuscany, we handle every detail with care.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  At Happiness Plans, we don't just plan trips and events – we
+                  create stories that last a lifetime. Our commitment to
+                  excellence, transparency, and personalized service has made us
+                  a trusted partner for thousands of clients worldwide.
+                </p>
               </div>
-
-              {/* Trust badges */}
-              <div className="mt-8 grid max-w-xl grid-cols-3 gap-4 text-center">
-                {[
-                  { label: "Sustainably Sourced", Icon: Leaf },
-                  { label: "Bespoke Dimensions", Icon: Ruler },
-                  { label: "Artisan Built", Icon: Hammer },
-                ].map(({ label, Icon }) => (
-                  <div
-                    key={label}
-                    className="rounded-xl border border-zinc-200 bg-white/70 px-3 py-4 text-xs shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/40"
-                  >
-                    <Icon className="mx-auto mb-2 h-4 w-4" />
-                    <p className="font-medium text-zinc-700 dark:text-zinc-300">{label}</p>
-                  </div>
-                ))}
+              <div className="lg:w-1/2 rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition duration-500">
+                <img
+                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                  alt="Our Team"
+                  className="w-full h-auto"
+                  keywords="team, collaboration, office, planning, professionals"
+                />
               </div>
-            </motion.div>
-
-            {/* Visual panel */}
-            <motion.div
-              variants={fadeUp}
-              className="relative aspect-4/3 overflow-hidden rounded-3xl border border-zinc-200 bg-linear-to-br from-amber-100 via-rose-50 to-emerald-100 shadow-xl dark:border-zinc-800 dark:from-amber-950/30 dark:via-zinc-900 dark:to-emerald-900/20"
-            >
-              {/* Placeholder 3D-ish card grid */}
-              <div className="absolute inset-0 grid grid-cols-3 gap-3 p-3 opacity-90">
-                {[...Array(9)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="rounded-2xl bg-white/70 shadow-sm backdrop-blur dark:bg-zinc-900/60"
-                  />
-                ))}
-              </div>
-              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.6),transparent_50%)] dark:bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.06),transparent_50%)]" />
-            </motion.div>
-          </motion.div>
-        </section>
-
-        {/* Our Story */}
-        <section id="our-story" className="py-16 sm:py-24">
-          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
-            <motion.h2 variants={fadeUp} className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Our Story
-            </motion.h2>
-            <motion.p variants={fadeUp} className="mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-300">
-              Woodify began with a simple frustration: beautiful furniture rarely fits real homes.
-              We started as designers and engineers obsessed with solving the one-size-fits-all
-              problem. The idea was bold yet human—give people the freedom to co-create pieces that
-              reflect their lives, then build them with the care of a modern craft studio.
-            </motion.p>
-          </motion.div>
-
-          {/* Story Highlights */}
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {[
-              {
-                title: "From workshop to web",
-                body:
-                  "We combined artisan methods with digital tools—so you can shape dimensions, select materials, and preview finishes before a single cut is made.",
-                icon: Package2,
-              },
-              {
-                title: "People-first customization",
-                body:
-                  "Upload room photos or sketches, annotate needs, and get suggestions tuned to your space, style, and budget.",
-                icon: HeartHandshake,
-              },
-            ].map(({ title, body, icon: Icon }) => (
-              <motion.div
-                key={title}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, margin: "-100px" }}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
-              >
-                <Icon className="h-5 w-5" />
-                <h3 className="mt-3 text-lg font-semibold">{title}</h3>
-                <p className="mt-2 text-zinc-600 dark:text-zinc-300">{body}</p>
-              </motion.div>
-            ))}
+            </div>
           </div>
         </section>
 
-        {/* Our Vision */}
-        <section id="our-vision" className="py-16 sm:py-24">
-          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
-            <motion.h2 variants={fadeUp} className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Our Vision
-            </motion.h2>
-            <motion.p variants={fadeUp} className="mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-300">
-              We believe personalization should be accessible to everyone—not a luxury reserved for a few.
-              Woodify empowers you to design furniture that works precisely for your lifestyle, without compromising on beauty or durability.
-            </motion.p>
+        {/* Our Story Timeline */}
+        <section className="py-16 bg-beige-50">
+          <div className="container mx-auto px-4">
+            <h3 className="text-3xl font-semibold mb-12 text-center text-gray-800">
+              Our Journey
+            </h3>
 
-            <motion.div variants={fadeUp} className="mt-8 grid gap-6 sm:grid-cols-3">
-              {[
-                { label: "Made-to-measure", Icon: Ruler },
-                { label: "Built to last", Icon: ShieldCheck },
-                { label: "Planet-forward", Icon: Recycle },
-              ].map(({ label, Icon }) => (
-                <div
-                  key={label}
-                  className="rounded-2xl border border-zinc-200 bg-white p-5 text-center shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
-                >
-                  <Icon className="mx-auto h-6 w-6" />
-                  <p className="mt-2 font-medium">{label}</p>
+            <div className="relative">
+              {/* Timeline Vertical Line */}
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-teal-200 z-0"></div>
+
+              {/* Timeline Items */}
+              <div className="space-y-20">
+                {/* 2018 */}
+                <div className="flex flex-col md:flex-row items-center relative z-10">
+                  <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                      <h4 className="text-xl font-bold text-teal-600 mb-2">
+                        2018
+                      </h4>
+                      <h5 className="text-lg font-medium text-gray-800 mb-2">
+                        Founded in San Francisco
+                      </h5>
+                      <p className="text-gray-600">
+                        Started with a team of 3 passionate travelers and event
+                        planners with a vision to transform the industry.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="md:w-1/2 flex justify-start md:justify-center">
+                    <div className="bg-teal-500 rounded-full h-12 w-12 flex items-center justify-center shadow-lg">
+                      <span className="material-symbols-outlined text-white">
+                        rocket_launch
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              ))}
-            </motion.div>
-          </motion.div>
-        </section>
 
-        {/* Our Craft */}
-        <section id="our-craft" className="py-16 sm:py-24">
-          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
-            <motion.h2 variants={fadeUp} className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Our Craft
-            </motion.h2>
-            <motion.p variants={fadeUp} className="mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-300">
-              Every piece passes through skilled hands. We partner with artisans and certified suppliers,
-              choosing responsibly sourced hardwoods, low-VOC finishes, and hardware tested for decades of use.
-              Your design becomes a build plan—precise, durable, and worthy of your space.
-            </motion.p>
-
-            <motion.div variants={fadeUp} className="mt-8 grid gap-6 md:grid-cols-3">
-              {[
-                {
-                  title: "Premium materials",
-                  desc: "FSC®-certified woods, recycled metals, and eco-conscious finishes for healthier homes.",
-                  Icon: Leaf,
-                },
-                {
-                  title: "Artisan precision",
-                  desc: "Joinery that holds up, tolerances that matter, and finish quality you can feel.",
-                  Icon: Hammer,
-                },
-                {
-                  title: "Sustainable supply",
-                  desc: "Transparent sourcing, optimized cuts, and smart packaging reduce waste at every step.",
-                  Icon: Recycle,
-                },
-              ].map(({ title, desc, Icon }) => (
-                <div key={title} className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                  <Icon className="h-5 w-5" />
-                  <h3 className="mt-3 text-lg font-semibold">{title}</h3>
-                  <p className="mt-2 text-zinc-600 dark:text-zinc-300">{desc}</p>
+                {/* 2019 */}
+                <div className="flex flex-col md:flex-row items-center relative z-10">
+                  <div className="md:w-1/2 flex justify-start md:justify-center order-1 md:order-0">
+                    <div className="bg-teal-500 rounded-full h-12 w-12 flex items-center justify-center shadow-lg">
+                      <span className="material-symbols-outlined text-white">
+                        celebration
+                      </span>
+                    </div>
+                  </div>
+                  <div className="md:w-1/2 md:pl-12 order-2 md:order-0 mt-6 md:mt-0">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                      <h4 className="text-xl font-bold text-teal-600 mb-2">
+                        2019
+                      </h4>
+                      <h5 className="text-lg font-medium text-gray-800 mb-2">
+                        First 100 Events
+                      </h5>
+                      <p className="text-gray-600">
+                        Successfully organized 100 events across 12 countries,
+                        with a 98% client satisfaction rate.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              ))}
-            </motion.div>
-          </motion.div>
-        </section>
 
-        {/* Innovation Meets Design */}
-        <section id="innovation" className="py-16 sm:py-24">
-          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
-            <motion.h2 variants={fadeUp} className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Innovation Meets Design
-            </motion.h2>
-            <motion.p variants={fadeUp} className="mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-300">
-              Woodify’s AI visualization helps you explore possibilities quickly. Upload a room photo or
-              a simple sketch to see personalized suggestions—dimensions, materials, and finishes—rendered
-              in context. Iterate fast. Decide confidently.
-            </motion.p>
-
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
-              <motion.div variants={fadeUp} className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <div className="flex items-center gap-3">
-                  <Sparkles className="h-5 w-5" />
-                  <h3 className="text-lg font-semibold">Smart suggestions</h3>
+                {/* 2021 */}
+                <div className="flex flex-col md:flex-row items-center relative z-10">
+                  <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                      <h4 className="text-xl font-bold text-teal-600 mb-2">
+                        2021
+                      </h4>
+                      <h5 className="text-lg font-medium text-gray-800 mb-2">
+                        Global Expansion
+                      </h5>
+                      <p className="text-gray-600">
+                        Opened offices in London, Tokyo, and Sydney, expanding
+                        our reach to over 50 countries worldwide.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="md:w-1/2 flex justify-start md:justify-center">
+                    <div className="bg-teal-500 rounded-full h-12 w-12 flex items-center justify-center shadow-lg">
+                      <span className="material-symbols-outlined text-white">
+                        public
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <p className="mt-2 text-zinc-600 dark:text-zinc-300">
-                  Get style and layout guidance tuned to your room’s light, dimensions, and color palette.
-                </p>
-              </motion.div>
 
-              <motion.div variants={fadeUp} className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <div className="flex items-center gap-3">
-                  <Ruler className="h-5 w-5" />
-                  <h3 className="text-lg font-semibold">Parametric sizing</h3>
+                {/* 2022 */}
+                <div className="flex flex-col md:flex-row items-center relative z-10">
+                  <div className="md:w-1/2 flex justify-start md:justify-center order-1 md:order-0">
+                    <div className="bg-teal-500 rounded-full h-12 w-12 flex items-center justify-center shadow-lg">
+                      <span className="material-symbols-outlined text-white">
+                        lightbulb
+                      </span>
+                    </div>
+                  </div>
+                  <div className="md:w-1/2 md:pl-12 order-2 md:order-0 mt-6 md:mt-0">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                      <h4 className="text-xl font-bold text-teal-600 mb-2">
+                        2022
+                      </h4>
+                      <h5 className="text-lg font-medium text-gray-800 mb-2">
+                        Innovation & Technology
+                      </h5>
+                      <p className="text-gray-600">
+                        Launched our event automation platform and mobile app,
+                        revolutionizing how clients plan and attend events.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p className="mt-2 text-zinc-600 dark:text-zinc-300">
-                  Dial in exact dimensions and watch the model adapt instantly—no more compromise corners.
-                </p>
-              </motion.div>
-
-              <motion.div variants={fadeUp} className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <div className="flex items-center gap-3">
-                  <ShieldCheck className="h-5 w-5" />
-                  <h3 className="text-lg font-semibold">Build-ready outputs</h3>
+                {/* 2023 */}
+                <div className="flex flex-col md:flex-row items-center relative z-10">
+                  <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                      <h4 className="text-xl font-bold text-teal-600 mb-2">
+                        2023
+                      </h4>
+                      <h5 className="text-lg font-medium text-gray-800 mb-2">
+                        Today & Beyond
+                      </h5>
+                      <p className="text-gray-600">
+                        A team of 50+ specialists, 1000+ events, and countless
+                        memories created. We continue to innovate and elevate
+                        the art of experience creation.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="md:w-1/2 flex justify-start md:justify-center">
+                    <div className="bg-teal-500 rounded-full h-12 w-12 flex items-center justify-center shadow-lg">
+                      <span className="material-symbols-outlined text-white">
+                        trending_up
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <p className="mt-2 text-zinc-600 dark:text-zinc-300">
-                  We translate your final design into precise build specs so artisans can craft exactly what you approved.
-                </p>
-              </motion.div>
-
-              <motion.div variants={fadeUp} className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <div className="flex items-center gap-3">
-                  <Recycle className="h-5 w-5" />
-                  <h3 className="text-lg font-semibold">Responsible by default</h3>
-                </div>
-                <p className="mt-2 text-zinc-600 dark:text-zinc-300">
-                  Optimization minimizes material waste and suggests greener options without sacrificing style.
-                </p>
-              </motion.div>
-            </div>
-          </motion.div>
-        </section>
-
-        {/* The Future of Furniture */}
-        <section id="future" className="py-16 sm:py-24">
-          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
-            <motion.h2 variants={fadeUp} className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              The Future of Furniture
-            </motion.h2>
-            <motion.p variants={fadeUp} className="mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-300">
-              Homes evolve. Your furniture should, too. We’re building a world where unique spaces
-              feel effortless to furnish—where creativity is guided, not gated. Join us as we shape
-              a more personal, sustainable future for the spaces we live in.
-            </motion.p>
-
-            {/* CTA banner */}
-            <motion.div
-              variants={fadeUp}
-              className="mt-10 overflow-hidden rounded-3xl border border-zinc-200 bg-linear-to-br from-zinc-100 via-white to-zinc-100 p-8 shadow-sm dark:border-zinc-800 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-900"
-            >
-              <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-                <div>
-                  <h3 className="text-xl font-semibold">Imagine a home that tells your story</h3>
-                  <p className="mt-1 text-zinc-600 dark:text-zinc-300">
-                    Start with a template, upload a sketch, or ask our AI to help. We’ll build what you imagine.
-                  </p>
-                </div>
-                <a
-                  href="/customize"
-                  className="group inline-flex items-center gap-2 rounded-2xl bg-zinc-900 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-zinc-900/10 transition hover:-translate-y-px hover:shadow-zinc-900/20 dark:bg-white dark:text-zinc-900"
-                >
-                  Design Your Piece
-                  <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
-                </a>
               </div>
-            </motion.div>
-          </motion.div>
-        </section>
-
-        {/* Sustainability Snapshot */}
-        <section id="sustainability" className="py-16 sm:py-24">
-          <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-100px" }}>
-            <motion.h2 variants={fadeUp} className="text-3xl font-semibold tracking-tight sm:text-4xl">
-              Sustainability, Built In
-            </motion.h2>
-            <motion.p variants={fadeUp} className="mt-4 max-w-3xl text-lg text-zinc-600 dark:text-zinc-300">
-              From sourcing to shipping, we make choices that respect the planet. Our approach reduces waste,
-              limits toxins, and prioritizes circularity.
-            </motion.p>
-
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                { label: "FSC® woods", Icon: Leaf },
-                { label: "Low-VOC finishes", Icon: ShieldCheck },
-                { label: "Optimized cuts", Icon: Ruler },
-                { label: "Recycled packaging", Icon: Recycle },
-              ].map(({ label, Icon }) => (
-                <motion.div
-                  key={label}
-                  variants={fadeUp}
-                  className="rounded-2xl border border-zinc-200 bg-white p-6 text-center shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
-                >
-                  <Icon className="mx-auto h-6 w-6" />
-                  <p className="mt-2 font-medium">{label}</p>
-                </motion.div>
-              ))}
             </div>
-          </motion.div>
+          </div>
         </section>
 
-        {/* Footer micro-copy */}
-        <footer className="py-10">
-          <p className="text-center text-sm text-zinc-500 dark:text-zinc-400">
-            Woodify — craftsmanship, innovation, and sustainability for the spaces you love.
-          </p>
-        </footer>
-      </main>
+        {/* What Makes Us Different */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h3 className="text-3xl font-semibold mb-12 text-center text-gray-800">
+              Why Choose Us
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-teal-500">
+                <div className="bg-teal-100 rounded-full h-16 w-16 flex items-center justify-center mb-6 mx-auto">
+                  <span className="material-symbols-outlined text-teal-600 text-3xl">
+                    person_pin_circle
+                  </span>
+                </div>
+                <h4 className="text-xl font-bold mb-4 text-center text-gray-800">
+                  Personalized Planning
+                </h4>
+                <p className="text-gray-600 text-center">
+                  Every journey is unique. We tailor each experience to your
+                  specific preferences, needs, and dreams.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-coral-500">
+                <div className="bg-coral-100 rounded-full h-16 w-16 flex items-center justify-center mb-6 mx-auto">
+                  <span className="material-symbols-outlined text-coral-600 text-3xl">
+                    checklist
+                  </span>
+                </div>
+                <h4 className="text-xl font-bold mb-4 text-center text-gray-800">
+                  End-to-End Execution
+                </h4>
+                <p className="text-gray-600 text-center">
+                  From the initial concept to the final farewell, we handle
+                  every detail with precision and care.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-teal-500">
+                <div className="bg-teal-100 rounded-full h-16 w-16 flex items-center justify-center mb-6 mx-auto">
+                  <span className="material-symbols-outlined text-teal-600 text-3xl">
+                    language
+                  </span>
+                </div>
+                <h4 className="text-xl font-bold mb-4 text-center text-gray-800">
+                  Global Expertise
+                </h4>
+                <p className="text-gray-600 text-center">
+                  Our team's extensive network and local knowledge ensures
+                  authentic and seamless experiences worldwide.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 border-t-4 border-coral-500">
+                <div className="bg-coral-100 rounded-full h-16 w-16 flex items-center justify-center mb-6 mx-auto">
+                  <span className="material-symbols-outlined text-coral-600 text-3xl">
+                    visibility
+                  </span>
+                </div>
+                <h4 className="text-xl font-bold mb-4 text-center text-gray-800">
+                  Transparent Pricing
+                </h4>
+                <p className="text-gray-600 text-center">
+                  No hidden fees, no surprises. We believe in clear
+                  communication and honest pricing from the start.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Team Members */}
+        <section className="py-16 bg-beige-50">
+          <div className="container mx-auto px-4">
+            <h3 className="text-3xl font-semibold mb-12 text-center text-gray-800">
+              Meet Our Team
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <img
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80"
+                  alt="Sarah Johnson"
+                  className="w-full h-64 object-cover object-center"
+                  keywords="female, professional, business, leader"
+                />
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-800 mb-1">
+                    Sarah Johnson
+                  </h4>
+                  <p className="text-teal-600 font-medium mb-3">
+                    Co-Founder & CEO
+                  </p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    With 15+ years in luxury travel and event planning, Sarah
+                    leads our global vision and strategy.
+                  </p>
+                  <div className="flex space-x-3">
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-linkedin text-lg"></i>
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-twitter text-lg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="Michael Chen"
+                  className="w-full h-64 object-cover object-center"
+                  keywords="male, professional, business, executive"
+                />
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-800 mb-1">
+                    Michael Chen
+                  </h4>
+                  <p className="text-teal-600 font-medium mb-3">
+                    Co-Founder & Head of Events
+                  </p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Michael's background in hospitality and event production
+                    ensures flawless execution of every experience.
+                  </p>
+                  <div className="flex space-x-3">
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-linkedin text-lg"></i>
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                  alt="Elena Rodriguez"
+                  className="w-full h-64 object-cover object-center"
+                  keywords="female, professional, business, manager"
+                />
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-800 mb-1">
+                    Elena Rodriguez
+                  </h4>
+                  <p className="text-teal-600 font-medium mb-3">
+                    Travel Specialist
+                  </p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Having visited 60+ countries, Elena's expertise ensures
+                    authentic and unforgettable journeys.
+                  </p>
+                  <div className="flex space-x-3">
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-linkedin text-lg"></i>
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-pinterest text-lg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                <img
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                  alt="James Wilson"
+                  className="w-full h-64 object-cover object-center"
+                  keywords="male, professional, business, creative"
+                />
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-gray-800 mb-1">
+                    James Wilson
+                  </h4>
+                  <p className="text-teal-600 font-medium mb-3">
+                    Creative Director
+                  </p>
+                  <p className="text-gray-600 text-sm mb-4">
+                    With a background in design and photography, James ensures
+                    each event has that perfect visual impact.
+                  </p>
+                  <div className="flex space-x-3">
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-linkedin text-lg"></i>
+                    </a>
+                    <a
+                      href="#"
+                      className="text-gray-500 hover:text-teal-600 transition"
+                    >
+                      <i className="fa-brands fa-behance text-lg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="py-16 bg-teal-600 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <h3 className="text-3xl font-bold mb-6">
+              Want to know more about what we do?
+            </h3>
+            <p className="text-xl mb-8 max-w-2xl mx-auto">
+              Discover how we can turn your travel dreams and event ideas into
+              unforgettable experiences.
+            </p>
+            <a
+              href="#"
+              className="inline-block bg-white text-teal-600 font-bold py-3 px-8 rounded-full hover:bg-coral-500 hover:text-teal transition duration-300 transform hover:scale-105 shadow-lg"
+              onClick={handleService}
+            >
+              Explore Our Services
+            </a>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

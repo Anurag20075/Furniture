@@ -362,7 +362,7 @@ export default function DetailPage({ product, related }) {
                   />
                 </div>
 
-                <div>
+                {/* <div>
                   <label className="block text-sm text-gray-600 mb-1">Upload Image</label>
                   <input type="file" accept="image/*" onChange={handleFile} />
                   {uploadedFile && (
@@ -370,7 +370,7 @@ export default function DetailPage({ product, related }) {
                       Uploaded: {uploadedFile.name}
                     </p>
                   )}
-                </div>
+                </div> */}
               </div>
             )}
 
