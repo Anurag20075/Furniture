@@ -6,7 +6,7 @@ const categories = [
   { id: "Door", name: "Door", icon: "🎨" },
   { id: "Tv Cabinet", name: "Tv Cabinet", icon: "☕" },
   { id: "Fall Ceiling", name: "Fall Ceiling", icon: "✏️" },
-  { id: "Bed", name: "Bed", icon: "🏴" },
+  { id: "BedRoom", name: "Bed", icon: "🏴" },
   { id: "Sofa", name: "Sofa", icon: "👜" },
 ];
 
