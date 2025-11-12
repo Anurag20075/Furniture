@@ -174,7 +174,7 @@ const Categories = () => {
               <AnimatePresence>
                 <motion.div
                   layout
-                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14"
                 >
                   {filteredProducts.map((product) => (
                     <Link to={`/product/${product.id}`} key={product.id}>
@@ -227,7 +227,7 @@ const Categories = () => {
               <p className="text-gray-500 mb-6">
                 Try a different category or search term
               </p>
-              <button
+              <button        
                 onClick={() => alert("Redirect to custom request form")}
                 className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700"
               >

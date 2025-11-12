@@ -717,34 +717,34 @@ const mockProducts = [
     "src": "/Celling/3.jpeg"
   }
 },
-{
-  id: 52,
-  name: "Cove Lighting Fall Ceiling Design",
-  // price: 1799.99,
-  category: "Fall Fall Ceiling",
-  customizable: true,
-  bestSeller: true,
-  description: "Soft cove lighting edges | Sleek modern design | Enhances room ambiance",
-  material: "POP with Recessed Lighting",
-  colors: ["white", "light gold", "beige"],
-  image: {
-    "src": "/Celling/4.jpeg"
-  }
-},
-{
-  id: 53,
-  name: "Geometric Fall Fall Ceiling Pattern",
-  // price: 1799.99,
-  category: "Fall Fall Ceiling",
-  customizable: true,
-  bestSeller: true,
-  description: "Geometric false Fall Fall Ceiling layout | Eye-catching symmetry | Great for halls and offices",
-  material: "POP & MDF Combination",
-  colors: ["white", "cream", "grey"],
-  image: {
-    "src": "/Celling/5.jpeg"
-  }
-},
+// {
+//   id: 52,
+//   name: "Cove Lighting Fall Ceiling Design",
+//   // price: 1799.99,
+//   category: "Fall  Ceiling",
+//   customizable: true,
+//   bestSeller: true,
+//   description: "Soft cove lighting edges | Sleek modern design | Enhances room ambiance",
+//   material: "POP with Recessed Lighting",
+//   colors: ["white", "light gold", "beige"],
+//   image: {
+//     "src": "/Celling/4.jpeg"
+//   }
+// },
+// {
+//   id: 53,
+//   name: "Geometric Fall Fall Ceiling Pattern",
+//   // price: 1799.99,
+//   category: "Fall  Ceiling",
+//   customizable: true,
+//   bestSeller: true,
+//   description: "Geometric false Fall Fall Ceiling layout | Eye-catching symmetry | Great for halls and offices",
+//   material: "POP & MDF Combination",
+//   colors: ["white", "cream", "grey"],
+//   image: {
+//     "src": "/Celling/5.jpeg"
+//   }
+// },
 {
   id: 54,
   name: "Luxury Coffered Fall Fall Ceiling",
@@ -1010,7 +1010,90 @@ const mockProducts = [
   image: {
     "src": "/Bedroom/12.jpeg"
   }
-}
-
+},
+{
+  id: 73,
+  name: "Modern Sliding Window",
+  // price: 1799.99,
+  category: "Window",
+  customizable: true,
+  bestSeller: true,
+  description: "Smooth sliding glass window | Easy operation | Perfect for balconies and living rooms",
+  material: "UPVC Frame with Toughened Glass",
+  colors: ["white", "grey", "dark brown"],
+  image: {
+    "src": "/Window/1.jpeg"
+  }
+},
+{
+  id: 74,
+  name: "Casement Window Design",
+  // price: 1799.99,
+  category: "Window",
+  customizable: true,
+  bestSeller: true,
+  description: "Classic casement opening | Airtight sealing | Energy-efficient and durable design",
+  material: "Aluminum Frame with Double-Glazed Glass",
+  colors: ["silver", "white", "black"],
+  image: {
+    "src": "/Window/2.jpeg"
+  }
+},
+{
+  id: 75,
+  name: "Bay Window with Seating",
+  // price: 1799.99,
+  category: "Window",
+  customizable: true,
+  bestSeller: true,
+  description: "Elegant bay window with seating ledge | Adds charm and space | Perfect for bedrooms or lounges",
+  material: "Hardwood Frame & Tempered Glass",
+  colors: ["oak", "walnut", "white"],
+  image: {
+    "src": "/Window/3.jpeg"
+  }
+},
+{
+  id: 76,
+  name: "Fixed Glass Window",
+  // price: 1799.99,
+  category: "Window",
+  customizable: true,
+  bestSeller: true,
+  description: "Fixed-frame design for natural light | Ideal for scenic views | Low maintenance glass setup",
+  material: "UPVC Frame with Laminated Glass",
+  colors: ["white", "black", "grey"],
+  image: {
+    "src": "/Window/4.jpeg"
+  }
+},
+{
+  id: 77,
+  name: "French Window Set",
+  // price: 1799.99,
+  category: "Window",
+  customizable: true,
+  bestSeller: true,
+  description: "Elegant French-style windows | Full glass panels for light and openness | Adds luxury to interiors",
+  material: "Teak Wood Frame with Clear Glass",
+  colors: ["teak", "white", "cream"],
+  image: {
+    "src": "/Window/5.jpeg"
+  }
+},
+{
+  id: 78,
+  name: "Sliding Window with Mosquito Net",
+  // price: 1799.99,
+  category: "Window",
+  customizable: true,
+  bestSeller: true,
+  description: "Smooth dual-rail system | Built-in insect screen | Sturdy and stylish for modern homes",
+  material: "Aluminum Frame & Mesh Panel",
+  colors: ["black", "white", "grey"],
+  image: {
+    "src": "/Window/6.jpeg"
+  }
+},
 ];
 export default mockProducts;
