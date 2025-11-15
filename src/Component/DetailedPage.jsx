@@ -254,11 +254,7 @@ export default function DetailPage({ product, related }) {
     return `₹${price * quantity}`;
   }, [product?.price, quantity]);
 
-  function handleFile(e) {
-    const f = e.target.files?.[0];
-    setUploadedFile(f || null);
-  }
-
+ 
   function addToCart() {
     console.log("Add to cart", { product: product.id, quantity, customText, uploadedFile });
     alert("🛒 Added to cart — demo only");

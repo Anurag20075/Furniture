@@ -8,6 +8,7 @@ import HomePage from "./Component/Home";
 import Footer from "./Component/Footer";
 import AboutPage from "./Component/About";
 import Contact from "./Component/Contact";
+import PradeepFurniturePortfolio from "./Component/Portfolio";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/product/:id" element={<DetailedWrapper />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<PradeepFurniturePortfolio />} />
       </Routes>
       <Footer />
     </Router>

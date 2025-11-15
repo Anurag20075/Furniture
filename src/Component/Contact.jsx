@@ -9,10 +9,26 @@ const Contact = () => {
     message: "",
   });
 
+  const [uploadedFile, setUploadedFile] = useState(null);
+  const [previewURL, setPreviewURL] = useState(null);
+
   const [formStatus, setFormStatus] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle file upload + preview
+  const handleFile = (e) => {
+    const file = e.target.files?.[0];
+
+    if (file) {
+      setUploadedFile(file);
+      setPreviewURL(URL.createObjectURL(file)); // preview image
+    } else {
+      setUploadedFile(null);
+      setPreviewURL(null);
+    }
   };
 
   const handleSubmit = (e) => {
@@ -28,9 +44,10 @@ const Contact = () => {
       return;
     }
 
-    // Simulated submission
-    console.log("Form submitted:", formData);
+    console.log("Form submitted:", formData, uploadedFile);
+
     setFormStatus("✅ Your message has been sent!");
+
     setFormData({
       name: "",
       email: "",
@@ -38,6 +55,9 @@ const Contact = () => {
       subject: "",
       message: "",
     });
+
+    setUploadedFile(null);
+    setPreviewURL(null);
 
     setTimeout(() => setFormStatus(""), 3000);
   };
@@ -50,6 +70,7 @@ const Contact = () => {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Inputs */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm font-semibold text-gray-700">
@@ -64,6 +85,7 @@ const Contact = () => {
                 placeholder="Your name"
               />
             </div>
+
             <div>
               <label className="block text-sm font-semibold text-gray-700">
                 Email Address *
@@ -77,6 +99,7 @@ const Contact = () => {
                 placeholder="you@example.com"
               />
             </div>
+
             <div>
               <label className="block text-sm font-semibold text-gray-700">
                 Phone Number
@@ -90,6 +113,7 @@ const Contact = () => {
                 placeholder="Optional"
               />
             </div>
+
             <div>
               <label className="block text-sm font-semibold text-gray-700">
                 Subject *
@@ -105,6 +129,7 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Message */}
           <div>
             <label className="block text-sm font-semibold text-gray-700">
               Message *
@@ -119,6 +144,72 @@ const Contact = () => {
             ></textarea>
           </div>
 
+          {/* Upload Section */}
+          <div className="mt-2">
+            <label className="block text-sm font-semibold text-gray-700 mb-2">
+              Upload Image
+            </label>
+
+            {/* Dropzone */}
+            <div
+              className="border-2 border-dashed border-gray-300 rounded-xl p-6 flex flex-col items-center justify-center cursor-pointer hover:border-indigo-500 hover:bg-indigo-50 transition"
+              onClick={() => document.getElementById("uploadInput").click()}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-10 h-10 text-indigo-500 mb-3"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-9 0V3m0 0L6.75 6.75M12 3l5.25 3.75"
+                />
+              </svg>
+
+              <p className="text-gray-700 font-medium">
+                Click to upload or drag file here
+              </p>
+              <p className="text-xs text-gray-500 mt-1">
+                PNG, JPG up to 5MB
+              </p>
+
+              <input
+                id="uploadInput"
+                type="file"
+                accept="image/*"
+                onChange={handleFile}
+                className="hidden"
+              />
+            </div>
+
+            {/* Preview Thumbnail */}
+            {previewURL && (
+              <div className="mt-4 flex items-center gap-4">
+                <img
+                  src={previewURL}
+                  alt="preview"
+                  className="w-28 h-28 object-cover rounded-lg shadow-md border border-gray-200"
+                />
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setUploadedFile(null);
+                    setPreviewURL(null);
+                  }}
+                  className="text-red-500 text-sm underline hover:text-red-700"
+                >
+                  Remove
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Submit */}
           <div className="text-center">
             <button
               type="submit"

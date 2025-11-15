@@ -21,10 +21,16 @@ import {
   BoxIcon,
   UtensilsCrossed
 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+// import { Navigate} from 'react-router-dom';
 
 export default function HomePage() {
 
   const [ setActiveCategory] = useState(null);
+  const navigate = useNavigate();
+  const handleService = () => {
+    navigate("/service");
+  };  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -135,14 +141,20 @@ export default function HomePage() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <button className="px-8 py-3 bg-blue-700 text-white rounded-md hover:bg-blue-800 transition-colors flex items-center justify-center">
-              Start Designing
+            <button className="px-8 py-3 bg-blue-700 text-white rounded-md hover:bg-blue-800 transition-colors flex items-center justify-center" onClick={() => navigate('/categories')}  >
+              See our Work 
               <ArrowRight className="ml-2" size={18} />
             </button>
-            <button className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-md hover:bg-white/30 transition-colors flex items-center justify-center">
-              Watch Demo
-              <ChevronRight className="ml-2" size={18} />
-            </button>
+          <button
+  onClick={() => {
+    window.open("https://web.whatsapp.com/916398802517?text=Hi%20I%20want%20a%20quota", "_blank");
+  }}
+  className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-md hover:bg-white/30 transition-colors flex items-center justify-center"
+>
+  Get Quota
+  <ChevronRight className="ml-2" size={18} />
+</button>
+
           </motion.div>
         </div>
         
@@ -191,7 +203,7 @@ export default function HomePage() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className={`${category.color} rounded-lg p-6 cursor-pointer transition-all duration-300 flex flex-col items-center justify-center h-40`}
-                  onClick={() => setActiveCategory(category.id)}
+                  onClick={() => navigate('/categories')}
                 >
                   <Icon size={32} className="text-blue-700 mb-3" />
                   <span className="text-gray-800 font-medium">{category.name}</span>
