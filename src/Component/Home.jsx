@@ -147,7 +147,7 @@ export default function HomePage() {
             </button>
           <button
   onClick={() => {
-    window.open("https://web.whatsapp.com/916398802517?text=Hi%20I%20want%20a%20quota", "_blank");
+    window.open("https://web.whatsapp.com/+919528836338?text=Hi%20I%20want%20a%20quota", "_blank");
   }}
   className="px-8 py-3 bg-white/20 backdrop-blur-sm text-white border border-white/30 rounded-md hover:bg-white/30 transition-colors flex items-center justify-center"
 >

@@ -9,14 +9,14 @@ export default function PradeepFurniturePortfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const categories = [
-    "All",
+    "All",  
     "Modular Kitchen",
     "Wardrobe",
     "TV Unit",
     "Doors",
-    "Windows",
+    // "Windows",
     "Office Furniture",
-    "CNC",
+    // "CNC",
     "Interior Project",
   ];
 
@@ -26,9 +26,7 @@ export default function PradeepFurniturePortfolio() {
       title: "Modern L-Shaped Modular Kitchen",
       category: "Modular Kitchen",
       images: [
-        "/images/kitchen1.jpg",
-        "/images/kitchen1-2.jpg",
-        "/images/kitchen1-3.jpg",
+        "/Portfolio/2.jpeg"
       ],
       material: "Marine Ply + Acrylic Finish",
       size: "12ft x 8ft",
@@ -41,7 +39,7 @@ export default function PradeepFurniturePortfolio() {
       id: 2,
       title: "Custom Wall-to-Wall Wardrobe",
       category: "Wardrobe",
-      images: ["/images/wardrobe1.jpg", "/images/wardrobe1-2.jpg"],
+      images: ["/Portfolio/4.jpeg"],
       material: "Plywood + Laminate",
       size: "7ft x 10ft",
       timeline: "7 days",
@@ -53,7 +51,7 @@ export default function PradeepFurniturePortfolio() {
       id: 3,
       title: "TV Unit with Floating Shelves",
       category: "TV Unit",
-      images: ["/images/tvunit1.jpg"],
+      images: ["/Portfolio/5.jpeg"],
       material: "MDF + Veneer",
       size: "8ft x 2ft",
       timeline: "5 days",
@@ -64,7 +62,7 @@ export default function PradeepFurniturePortfolio() {
       id: 4,
       title: "Solid Wood Entrance Door",
       category: "Doors",
-      images: ["/images/door1.jpg"],
+      images: ["/Portfolio/3.jpeg"],
       material: "Teak + Varnish",
       size: "3ft x 7ft",
       timeline: "4 days",
@@ -75,29 +73,29 @@ export default function PradeepFurniturePortfolio() {
       id: 5,
       title: "Office Workstation Cluster",
       category: "Office Furniture",
-      images: ["/images/office1.jpg"],
+      images: ["/Portfolio/7.jpeg"],
       material: "Plywood + Laminate",
       size: "Custom",
       timeline: "14 days",
       description: "Modular workstations for a commercial office block with cable-management and storage units.",
       priceRange: "Bulk Pricing",
     },
-    {
-      id: 6,
-      title: "CNC Decorative Panel",
-      category: "CNC",
-      images: ["/images/cnc1.jpg"],
-      material: "MDF",
-      size: "6ft x 4ft",
-      timeline: "3 days",
-      description: "Laser-cut decorative panel used as a partition in an interior project.",
-      priceRange: "₹3500 - ₹8000",
-    },
+    // {
+    //   id: 6,
+    //   title: "CNC Decorative Panel",
+    //   category: "CNC",
+    //   images: ["/Portfolio/5.jpeg"],
+    //   material: "MDF",
+    //   size: "6ft x 4ft",
+    //   timeline: "3 days",
+    //   description: "Laser-cut decorative panel used as a partition in an interior project.",
+    //   priceRange: "₹3500 - ₹8000",
+    // },
     {
       id: 7,
       title: "Turnkey Interior Project - Model Flat",
       category: "Interior Project",
-      images: ["/images/interior1.jpg", "/images/interior1-2.jpg"],
+      images: ["/Portfolio/6.jpeg"],
       material: "Mixed",
       size: "2 BHK",
       timeline: "30 days",
@@ -138,7 +136,7 @@ export default function PradeepFurniturePortfolio() {
           </div>
 
           <div className="rounded-2xl overflow-hidden shadow-lg hidden md:block">
-            <img src="/images/hero-kitchen.jpg" alt="Modular Kitchen" className="w-full h-[360px] object-cover" />
+            <img src="/Portfolio/1.jpeg" alt="Modular Kitchen" className="w-full h-[360px] object-cover" />
           </div>
         </div>
       </section>

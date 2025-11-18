@@ -24,7 +24,7 @@ function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-700">
+        <nav className="hidden md:flex gap-6 text-sm font-medium text-slate-700 hover:text-slate-900">
           <Link to="/" className="hover:text-slate-900">Home</Link>
           <Link to="/categories" className="hover:text-slate-900">Categories</Link>
           <Link to="/about" className="hover:text-slate-900">About</Link>
@@ -46,7 +46,7 @@ function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/categories" onClick={() => setIsOpen(false)}>Categories</Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/portfolio" onClick={() => setIsOpen(false)}>Portfolio</Link>
         </div>
       )}
     </header>
