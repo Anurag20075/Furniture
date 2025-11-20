@@ -717,34 +717,6 @@ const mockProducts = [
     "src": "/Celling/3.jpeg"
   }
 },
-// {
-//   id: 52,
-//   name: "Cove Lighting Fall Ceiling Design",
-//   // price: 1799.99,
-//   category: "Fall  Ceiling",
-//   customizable: true,
-//   bestSeller: true,
-//   description: "Soft cove lighting edges | Sleek modern design | Enhances room ambiance",
-//   material: "POP with Recessed Lighting",
-//   colors: ["white", "light gold", "beige"],
-//   image: {
-//     "src": "/Celling/4.jpeg"
-//   }
-// },
-// {
-//   id: 53,
-//   name: "Geometric Fall Fall Ceiling Pattern",
-//   // price: 1799.99,
-//   category: "Fall  Ceiling",
-//   customizable: true,
-//   bestSeller: true,
-//   description: "Geometric false Fall Fall Ceiling layout | Eye-catching symmetry | Great for halls and offices",
-//   material: "POP & MDF Combination",
-//   colors: ["white", "cream", "grey"],
-//   image: {
-//     "src": "/Celling/5.jpeg"
-//   }
-// },
 {
   id: 54,
   name: "Luxury Coffered Fall Fall Ceiling",
