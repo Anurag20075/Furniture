@@ -10,6 +10,7 @@ import AboutPage from "./Component/About";
 import Contact from "./Component/Contact";
 import PradeepFurniturePortfolio from "./Component/Portfolio";
 
+import AI from "./Component/AI";
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<PradeepFurniturePortfolio />} />
+        <Route path="/ai" element={<AI />} />
       </Routes>
       <Footer />
     </Router>

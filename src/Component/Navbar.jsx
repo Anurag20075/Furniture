@@ -29,6 +29,7 @@ function Navbar() {
           <Link to="/categories" className="hover:text-slate-900">Categories</Link>
           <Link to="/about" className="hover:text-slate-900">About</Link>
           <Link to="/portfolio" className="hover:text-slate-900">Portfolio</Link>
+          <Link to="/ai" className="hover:text-slate-900">AI</Link>
         </nav>
 
         {/* Mobile Menu Toggle */}
