@@ -3,7 +3,7 @@ import React, { useState, useCallback, useMemo } from 'react';
 // API Endpoints (Shared constants)
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=`;
 const IMAGEN_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=`;
-const apiKey = "AIzaSyAoM3kKGKsD0omc9gzhwRYnq9D-kH8-yaU"; // <--- *** FIX: Replace this with your valid Google API Key ***
+const apiKey = "Api key go here"; // <--- *** FIX: Replace this with your valid Google API Key ***
 
 // Helper function to convert File object to Base64 string
 const fileToBase64 = (file) => {
